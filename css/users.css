@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    text-align: right; /* Shift navbar content to the right */
+}
+
+.navbar a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    font-weight: bold;
+    background-color: #ddd;
+    color: black;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.errors {
+    color: red;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.errors li {
+    padding: 5px;
+    background: #ffe6e6;
+    border: 1px solid #f5c6c6;
+    border-radius: 4px;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Pagination Styles */
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a.button {
+    margin: 0 4px;
+}
+
+/* Edit and Delete Button Styles */
+.table-actions {
+    display: flex;
+    gap: 4px; /* Space between buttons */
+}
+
+.table-actions a {
+    display: inline-block;
+    padding: 6px 12px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.table-actions a.edit {
+    background-color: #4CAF50; /* Green */
+}
+
+.table-actions a.edit:hover {
+    background-color: #45a049;
+}
+
+.table-actions a.delete {
+    background-color: #f44336; /* Red */
+}
+
+.table-actions a.delete:hover {
+    background-color: #e53935;
+}
